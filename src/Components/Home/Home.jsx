@@ -35,7 +35,7 @@ function Home() {
                                 2000,
                             ]}
                             wrapper="span"
-                            speed={50}
+                            speed={600}
                             repeat={Infinity}
                         />
                     </h2>
