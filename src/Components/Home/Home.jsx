@@ -1,18 +1,44 @@
-import React, { useRef } from 'react'
-// import homeGif from './path/to/home.gif';
-// import home from '../../assets/home.gif'
+import React, { useState, useEffect } from 'react'
 import About from '../About/About'
 import Waves from '../waves/Waves'
 import Waves_2 from '../waves/Waves_2'
+import { TypeAnimation } from 'react-type-animation';
 
 function Home() {
-    // const aboutRef = useRef(null);
+    // const messages = ["Innovate", "Inspire", "Impact"]
+    // const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
+    // useEffect(() => {
+    //     const intervalId = setInterval(() => {
+    //         setCurrentMessageIndex((prevIndex) => (prevIndex + 1) % messages.length);
+    //     }, 2000); // Change text every 2 seconds
+
+    //     return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    // }, []);
+
+
+
     return (<>
         <div className="flex  flex-row bg-gray-700 text-slate-50">
             <div className="flex flex-col md:flex-row items-center justify-center p-4 mt-4">
 
                 <div className="ml-5 w-full md:w-1/2 p-2">
-                    <h2 className="lg:text-8xl md:text-6xl sm:text-4xl font-bold mb-4">Your Title <span className='text-orange-700'>He Your</span> Title Here</h2>
+                    <h2 className="lg:text-7xl md:text-6xl sm:text-4xl font-bold mb-4">
+                        Your<span className='text-orange-700'> Catalyst for Digital</span> Excellence <br></br>
+                        <TypeAnimation
+                            sequence={[
+                                // Same substring at the start will only be typed out once, initially
+                                'Innovate',
+                                2000, // wait 1s before replacing "Mice" with "Hamsters"
+                                'Inspire',
+                                2000,
+                                'Impact',
+                                2000,
+                            ]}
+                            wrapper="span"
+                            speed={50}
+                            repeat={Infinity}
+                        />
+                    </h2>
                     <p className="py-6">This is the text section. You can put any content here, and it will take half the width on medium and larger screens, and full width on smaller screens.</p>
                 </div>
                 <div className="mr-7 relative w-full md:w-2/5 p-2">

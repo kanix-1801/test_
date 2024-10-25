@@ -15,7 +15,7 @@ function About() {
                         />
                     </div>
                     <div className="w-full md:w-1/2 p-2">
-                        <h2 className="lg:text-6xl md:text-6xl sm:text-4xl font-bold mb-4">Your Title <span className='text-orange-700'>Here Your</span> Title Here</h2>
+                        <h2 className="lg:text-6xl md:text-6xl sm:text-4xl font-bold mb-4">Your Title <span className='text-orange-700'>Here Your</span> Your Catalyst for Digital Excellence</h2>
                         <p className="py-6">This is the text section. You can put any content here, and it will take half the width on medium and larger screens, and full width on smaller screens.</p>
                     </div>
 
