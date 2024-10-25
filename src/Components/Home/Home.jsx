@@ -28,14 +28,14 @@ function Home() {
                             sequence={[
                                 // Same substring at the start will only be typed out once, initially
                                 'Innovate',
-                                2000, // wait 1s before replacing "Mice" with "Hamsters"
+                                3000, // wait 1s before replacing "Mice" with "Hamsters"
                                 'Inspire',
-                                2000,
+                                3000,
                                 'Impact',
-                                2000,
+                                3000,
                             ]}
                             wrapper="span"
-                            speed={600}
+                            speed={40}
                             repeat={Infinity}
                         />
                     </h2>
