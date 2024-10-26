@@ -29,11 +29,11 @@ function HomeHeader() {
 
                         <br></br>
                     </div>
-                    <div className="relative w-4/5 md:w-1/3 p-2">
+                    <div className="relative w-4/5 lg:w-1/3 md:w-1/2 p-2">
                         <img
                             src="/home-fa.svg"
                             alt="Sample"
-                            className="floating_m w-96 h-full object-cover"
+                            className="floating_m w-full h-full object-cover"
                         />
                     </div>
                 </div>
