@@ -47,7 +47,6 @@ function Apply(props) {
                             <h2 className="text-2xl font-bold mb-4">Apply for {props.jobTitle}</h2>
                             <p className="mb-4">Please fill in your details to apply for this job.</p>
 
-                            {/* Include PopUpBtn component here */}
                             <PopUpBtn />
 
                             <div className="flex justify-end space-x-4 mt-6">
