@@ -3,6 +3,7 @@ import About from '../About/About'
 import Waves from '../waves/Waves'
 import Waves_2 from '../waves/Waves_2'
 import { TypeAnimation } from 'react-type-animation';
+import AboutLeft from '../About/AboutLeft';
 
 function Home() {
     return (
@@ -31,7 +32,6 @@ function Home() {
                             />
                         </h2>
                         <br></br>
-                        {/* <p className="py-6">This is the text section. You can put any content here, and it will take half the width on medium and larger screens, and full width on smaller screens.</p> */}
                     </div>
                     <div className="mr-7 relative w-full md:w-1/2 p-2">
                         <img
@@ -43,7 +43,10 @@ function Home() {
                 </div>
             </div>
             <Waves />
-            <About />
+            <About heading="Powering the Future with Trusted Expertise" para="At our core, we believe that innovation and sustainability go hand in hand. By driving advancements that are not only efficient but also environmentally conscious, we’re committed to creating technologies that serve both today’s needs and tomorrow’s challenges. Our sustainable vision guides every decision we make, ensuring that our solutions minimize impact while maximizing value. From reducing carbon footprints to optimizing resources, we empower bus" />
+            <AboutLeft heading="Powering the Future with Sustainable Vision" para="At our core, we believe that innovation and sustainability go hand in hand. By driving advancements that are not only efficient but also environmentally conscious, we’re committed to creating technologies that serve both today’s needs and tomorrow’s challenges. Our sustainable vision guides every decision we make, ensuring that our solutions minimize impact while maximizing value. From reducing carbon footprints to optimizing resources, we empower bus" />
+            <About heading="Powering the Future with Impactful Innovation" para="Our vision is to harness the power of innovation to create real, lasting impact. We’re dedicated to developing forward-thinking solutions that drive meaningful progress for businesses, communities, and industries. By combining cutting-edge technology with a deep understanding of our clients’ needs, we create tools and systems that solve complex challenges and open new possibilities. At every step, our goal is to deliver innovations that not only pro" />
+            <AboutLeft heading="Powering the Future with Transformative Ideas" para="We believe that big changes start with bold ideas. Our mission is to empower progress by turning visionary concepts into real-world solutions that reshape industries and elevate possibilities. With a focus on creativity and strategic innovation, we develop technologies that don’t just adapt to change but actively drive it. By pushing the boundaries of what’s possible, we’re not only supporting our clients today but laying the groundwork for a more " />
             <section
                 id='about'
                 style={{ backgroundColor: '#d3d3d3' }}
