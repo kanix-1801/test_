@@ -4,6 +4,7 @@ import Waves from '../waves/Waves'
 import Waves_2 from '../waves/Waves_2'
 import AboutLeft from '../About/AboutLeft';
 import HomeHeader from './HomeHeader';
+import Values from '../Values/Values';
 
 function Home() {
     return (
@@ -20,8 +21,9 @@ function Home() {
                 id='about'
                 style={{ backgroundColor: '#d3d3d3' }}
             >
-                <About />
-                <About />
+                {/* <About />
+                <About /> */}
+                <Values />
             </section>
             <Waves_2 />
 

@@ -9,7 +9,7 @@ function HomeHeader() {
 
                     <div className="ml-3 w-full md:w-1/2 p-1">
                         <h2 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-bold">
-                            Powering <span className="text-orange-700 mb-5 pb-5">the Future with</span>
+                            Powering <span className="text-orange-700 mb-5 pb-5"> the Future with </span>
                             <TypeAnimation
                                 sequence={[
                                     'Trusted Expertise',
