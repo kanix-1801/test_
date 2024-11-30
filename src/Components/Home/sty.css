@@ -1,0 +1,212 @@
+.section {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+}
+
+.section.fade-slide-up {
+    transform: translateY(30px);
+}
+
+.section.fade-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section.zoom-rotate {
+    transform: scale(0.9) rotate(-5deg);
+}
+
+.section.zoom-rotate.visible {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+
+.parallax {
+    background-image: url('path/to/your/image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Base Animation */
+.section {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Fade-In Animation */
+.section.fade {
+    transform: translateY(30px);
+}
+
+.section.fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Zoom-In Animation */
+.section.zoom {
+    transform: scale(0.8);
+}
+
+.section.zoom.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Rotate Animation */
+.section.rotate {
+    transform: rotate(-15deg);
+}
+
+.section.rotate.visible {
+    opacity: 1;
+    transform: rotate(0);
+}
+
+/* Slide-In from Left Animation */
+.section.slide-left {
+    transform: translateX(-50px);
+}
+
+.section.slide-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide-In from Right Animation */
+.section.slide-right {
+    transform: translateX(50px);
+}
+
+.section.slide-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Slide-Up Animation */
+.section.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button and Card Hover Effects */
+button {
+    transition: all 0.3s ease;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Fade-Slide-Up Animation */
+.fade-slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Section Background */
+#our-values {
+    padding: 5rem 0;
+    background-color: #e0f2fe; /* Light blue background */
+}
+
+/* Heading */
+#our-values h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #1e40af; /* Deep blue */
+    margin-bottom: 2rem;
+}
+
+/* Paragraph */
+#our-values p {
+    font-size: 1.125rem;
+    color: #1d4ed8; /* Medium blue */
+    margin-bottom: 3rem;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Card Styling */
+#our-values .p-6 {
+    padding: 1.5rem;
+    background-color: #ffffff; /* White */
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(30, 64, 175, 0.15); /* Light blue shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#our-values .p-6:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(30, 64, 175, 0.25); /* Darker shadow on hover */
+}
+
+/* Image Container */
+#our-values .bg-cover {
+    width: 6rem;
+    height: 6rem;
+    background-color: #f1f5f9; /* Light gray background */
+    border-radius: 9999px; /* Full rounded for circular container */
+    overflow: hidden;
+}
+
+/* Card Title */
+#our-values h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1d4ed8; /* Deep blue */
+}
+
+/* Responsive Grid */
+@media (min-width: 640px) {
+    #our-values .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    #our-values .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

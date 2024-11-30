@@ -1,26 +1,44 @@
-import React from 'react'
+import React from 'react';
+// import AnimatedSection from './AnimatedSection';
+import AnimatedSection from '../Home/AnimatedSection';
 
-function About(props) {
+const About = () => {
     return (
-        <>
-            <div className="flex flex-row">
-                <div className="flex flex-col md:flex-row items-center justify-center w-full p-4">
-                    <div className="w-full md:w-1/2 p-2">
-                        <img
-                            src="/aboutData.gif"
-                            alt="Sample"
-                            className="rounded-lg sm:w-1/2 md:w-1/2 lg:w-full h-auto object-cover shadow-2xl"
-                        />
-                    </div>
-                    <div className="w-full md:w-1/2 p-2">
-                        <h2 className="lg:text-6xl md:text-6xl sm:text-4xl text-4xl font-bold mb-4">{props.heading} <span className='text-orange-700'>{props.heading2} </span> </h2>
-                        <p className="font-serif text-gray-600 leading-relaxed tracking-wide py-6">{props.para}</p>
-                    </div>
+        <section id="about-us" className="py-20 bg-blue-50">
+            <div className="max-w-6xl mx-auto px-4 text-center">
+                {/* Animated Heading */}
+                <AnimatedSection animationType="fade-slide-up" delay={0.2}>
+                    <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-blue-800">
+                        About Us
+                    </h2>
+                </AnimatedSection>
 
-                </div>
+                {/* Animated Paragraphs */}
+                <AnimatedSection animationType="fade-slide-up" delay={0.4}>
+                    <p className="text-lg md:text-xl text-blue-700 leading-relaxed mb-10 max-w-4xl mx-auto">
+                        We are a forward-thinking tech company dedicated to creating{' '}
+                        <span className="text-blue-600 font-semibold">innovative</span> and{' '}
+                        <span className="text-blue-600 font-semibold">reliable</span> solutions that drive
+                        success for our clients. Our team combines technical expertise with a deep understanding
+                        of client needs, delivering impactful results that empower businesses to thrive in the
+                        evolving digital landscape.
+                    </p>
+                </AnimatedSection>
+
+                <AnimatedSection animationType="fade-slide-up" delay={0.6}>
+                    <p className="text-lg md:text-xl text-blue-700 leading-relaxed max-w-4xl mx-auto">
+                        Our core values—<span className="text-blue-600 font-semibold">innovation</span>,{' '}
+                        <span className="text-blue-600 font-semibold">reliability</span>,{' '}
+                        <span className="text-blue-600 font-semibold">customer-centricity</span>,{' '}
+                        <span className="text-blue-600 font-semibold">integrity</span>, and{' '}
+                        <span className="text-blue-600 font-semibold">excellence</span>—guide every project,
+                        ensuring quality and transparency. We build lasting partnerships that contribute to
+                        our clients' growth and a connected, future-ready world.
+                    </p>
+                </AnimatedSection>
             </div>
-        </>
-    )
-}
+        </section>
+    );
+};
 
-export default About
+export default About;

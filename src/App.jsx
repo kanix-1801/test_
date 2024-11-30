@@ -7,10 +7,10 @@ import UnderConstruction from "./Components/Undercons/UnderConstruction"
 export default function App() {
   return (
     <>
-      {/* <Header />
+      <Header />
       <Outlet />
-      <Footer /> */}
-      <UnderConstruction />
+      <Footer />
+      {/* <UnderConstruction /> */}
     </>
   )
 }

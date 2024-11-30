@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import ContactButton from '../Contact/ContactButton';
+
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -21,7 +22,7 @@ export default function Header() {
                 }
             }, 100);
         } else {
-            const aboutSection = document.getElementById('about');
+            const aboutSection = document.getElementById('section2');
             if (aboutSection) {
                 aboutSection.scrollIntoView({ behavior: 'smooth' });
             }
@@ -33,8 +34,14 @@ export default function Header() {
         <header className="shadow sticky z-50 top-0 bg-slate-50">
             <nav className="px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                    {/* Logo and Brand Name */}
                     <Link to="/" className="flex items-center">
-                        <div className='text-2xl font-bold'>
+                        <img
+                            src="ZITADRIX LOGO2.png"
+                            alt="Zitadrix Logo"
+                            className="h-8 w-8 mr-2"
+                        />
+                        <div className="text-2xl font-bold">
                             Zitadrix
                         </div>
                     </Link>
@@ -80,12 +87,12 @@ export default function Header() {
                                 </NavLink>
                             </li>
                             <li>
-                                <button
+                                <NavLink
                                     onClick={handleScrollToAbout}
                                     className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
                                 >
                                     About
-                                </button>
+                                </NavLink>
                             </li>
                             <li>
                                 <NavLink
