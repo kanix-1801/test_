@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactButton = () => {
     const handleContactClick = () => {
-        window.location.href = "mailto:youremail@example.com";
+        window.location.href = "mailto:support@zitadrix.com";
     };
 
     return (<>
